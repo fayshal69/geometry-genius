@@ -72,3 +72,72 @@ document.getElementById('parallelogramCalculation').addEventListener('click', fu
     }
     return;
 });
+
+// Rhombus calculation function
+document.getElementById('rhombusCalculation').addEventListener('click', function() {
+    const p = document.getElementById('rhombusP');
+    const q = document.getElementById('rhombusQ');
+    const pValue = p.value;
+    const qValue = q.value;
+
+    if(pValue.trim() === '' || qValue.trim() === '') {
+        return;
+    }
+    if(!isNaN(pValue) && !isNaN(qValue)) {
+        const result = (pValue * qValue) / 2;
+        const rhombusResult = document.getElementById('rhombusResult');
+        rhombusResult.innerText = result;
+        p.value = '';
+        q.value = '';
+        count += 1;
+        const para = document.createElement('p');
+        para.innerText = `${count}. Parallelogram Area = ${result} cm2`;
+        historyContainer.appendChild(para);
+    }
+    return;
+});
+
+// Pentagon calculation function
+document.getElementById('pentagonCalculation').addEventListener('click', function() {
+    const a = document.getElementById('pentagonA');
+    const aValue = a.value;
+
+    if(aValue.trim() === '') {
+        return;
+    }
+    if(!isNaN(aValue)) {
+        const result = ((Math.sqrt(5 * (5 + 2 * Math.sqrt(5))) * Math.pow(aValue, 2)) / 4).toFixed(2);
+        const pentagonResult = document.getElementById('pentagonResult');
+        pentagonResult.innerText = result;
+        a.value = '';
+        count += 1;
+        const para = document.createElement('p');
+        para.innerText = `${count}. Pentagon Area = ${result} cm2`;
+        historyContainer.appendChild(para);
+    }
+    return;
+});
+
+// Ellipse calculation function
+document.getElementById('ellipseCalculation').addEventListener('click', function() {
+    const a = document.getElementById('ellipseA');
+    const b = document.getElementById('ellipseB');
+    const aValue = a.value;
+    const bValue = b.value;
+
+    if(aValue.trim() === '' || bValue.trim() === '') {
+        return;
+    }
+    if(!isNaN(aValue) && !isNaN(bValue)) {
+        const result = ((aValue * bValue) * 3.14).toFixed(2);
+        const ellipseResult = document.getElementById('ellipseResult');
+        ellipseResult.innerText = result;
+        a.value = '';
+        b.value = '';
+        count += 1;
+        const para = document.createElement('p');
+        para.innerText = `${count}. Ellipse Area = ${result} cm2`;
+        historyContainer.appendChild(para);
+    }
+    return;
+});

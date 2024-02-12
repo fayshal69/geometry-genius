@@ -45,17 +45,17 @@
                   <h2 class="card-title">Area = W X L</h2>
                   <div class="grid grid-cols-2 gap-1 w-full text-xl">
                     <div class="flex items-center gap-2">
-                        <input type="text" class="w-[70%] border border-slate-300 outline-none p-2 rounded-lg" placeholder="w">
+                        <input type="text" class="w-[70%] border border-slate-300 outline-none p-2 rounded-lg" placeholder="w" id="rectangleW">
                         <span>cm</span>
                     </div>
                     <div class="flex items-center gap-2">
-                        <input type="text" class="w-[70%] border border-slate-300 outline-none p-2 rounded-lg" placeholder="l">
+                        <input type="text" class="w-[70%] border border-slate-300 outline-none p-2 rounded-lg" placeholder="l" id="rectangleL">
                         <span>cm</span>
                     </div>
                   </div>
-                  <p class="text-xl">Area: <span>0</span> cm<sup>2</sup></p>
+                  <p class="text-xl">Area: <span id="rectangleResult">0</span> cm<sup>2</sup></p>
                   <div class="card-actions">
-                    <button class="btn btn-primary w-full text-xl">Calculate</button>
+                    <button class="btn btn-primary w-full text-xl" id="rectangleCalculation">Calculate</button>
                   </div>
                 </div>
             </div>
@@ -69,17 +69,17 @@
                   <h2 class="card-title">Area = b X h</h2>
                   <div class="grid grid-cols-2 gap-1 w-full text-xl">
                     <div class="flex items-center gap-2">
-                        <input type="text" class="w-[70%] border border-slate-300 outline-none p-2 rounded-lg" placeholder="b">
+                        <input type="text" class="w-[70%] border border-slate-300 outline-none p-2 rounded-lg" placeholder="b" id="parallelogramB">
                         <span>cm</span>
                     </div>
                     <div class="flex items-center gap-2">
-                        <input type="text" class="w-[70%] border border-slate-300 outline-none p-2 rounded-lg" placeholder="h">
+                        <input type="text" class="w-[70%] border border-slate-300 outline-none p-2 rounded-lg" placeholder="h" id="parallelogramH">
                         <span>cm</span>
                     </div>
                   </div>
-                  <p class="text-xl">Area: <span>0</span> cm<sup>2</sup></p>
+                  <p class="text-xl">Area: <span id="parallelogramResult">0</span> cm<sup>2</sup></p>
                   <div class="card-actions">
-                    <button class="btn btn-primary w-full text-xl">Calculate</button>
+                    <button class="btn btn-primary w-full text-xl" id="parallelogramCalculation">Calculate</button>
                   </div>
                 </div>
             </div>

@@ -21,17 +21,17 @@
                   <h2 class="card-title">Area = 0.5 X b X h</h2>
                   <div class="grid grid-cols-2 gap-1 w-full text-xl">
                     <div class="flex items-center gap-2">
-                        <input type="text" class="w-[70%] border border-slate-300 outline-none p-2 rounded-lg" placeholder="b">
+                        <input type="text" class="w-[70%] border border-slate-300 outline-none p-2 rounded-lg" placeholder="b" id="triangleB">
                         <span>cm</span>
                     </div>
                     <div class="flex items-center gap-2">
-                        <input type="text" class="w-[70%] border border-slate-300 outline-none p-2 rounded-lg" placeholder="h">
+                        <input type="text" class="w-[70%] border border-slate-300 outline-none p-2 rounded-lg" placeholder="h" id="triangleH">
                         <span>cm</span>
                     </div>
                   </div>
-                  <p class="text-xl">Area: <span>0</span> cm<sup>2</sup></p>
+                  <p class="text-xl">Area: <span id="triangleResult">0</span> cm<sup>2</sup></p>
                   <div class="card-actions">
-                    <button class="btn btn-primary w-full text-xl">Calculate</button>
+                    <button class="btn btn-primary w-full text-xl" id="triangleCalculation">Calculate</button>
                   </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@
             <!-- card 5 -->
             <div class="card max-w-96 bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
-                  <img src="images/pentagon.png" alt="img" class="rounded-xl" />
+                  <img src="images/pentagon.png" alt="img" class="rounded-xl w-full" />
                 </figure>
                 <div class="card-body">
                   <h2 class="card-title">Pentagon</h2>
@@ -156,12 +156,10 @@
         </div>
         <!-- calculation history container -->
         <div class="col-span-1 border-4 border-slate-400 rounded-xl py-6 px-4">
-            <h1 class="text-3xl font-bold text-center mb-5 md:mb-10">History</h1>
+            <h1 class="text-3xl font-bold  mb-5 md:mb-10">History</h1>
             <!-- history item container -->
-            <div>
-                <p>hi alll</p>
-                <p>hi alll</p>
-                <p>hi alll</p>
+            <div id="historyContainer">
+                
             </div>
         </div>
     </div>
